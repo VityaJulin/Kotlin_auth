@@ -12,7 +12,7 @@ object Repository {
     // Ленивое создание Retrofit экземпляра
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
-            .baseUrl("https://ncraftmedia.herokuapp.com")
+            .baseUrl("https://kotlin-android-auth.herokuapp.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
